@@ -15,6 +15,857 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shafqat Baloch</title>
+    
+    
+    <!-- CSS -->
+    
+   <style>
+     
+     
+     * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:  #c8bbb9;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: #bc2e0f;
+}
+
+.menu a {
+    transition: 1s;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+/* Hover On Anchors */
+
+.menu a:hover {
+    color:   #671605;
+}
+
+.menu #logo {
+
+    position: absolute;
+    left: 0; 
+}
+
+.menu .fiver-contact {
+    transform: translateX(18.7rem);
+    font-size: 20px;
+}
+
+.fiver-contact .fa-user {
+    transform: translateX(-2rem);
+}
+
+/* Main Section Starting From Here */
+
+/*Info Section Starting From Here */
+
+
+.info-section {
+    width: 100%;
+    height: 500px;
+    margin-top: 80px;
+}
+
+.infos {
+    width: 780px;
+    margin-top: 100px;
+}
+
+.infos h1 {
+    position: relative;
+    left: 30rem;
+    top: -2.6rem;
+    transform: translateY(-90px);
+    width: 400px;
+     /* transform: translateX(300px); */
+}
+
+.infos p {
+    transform: translateY(-2rem);
+    margin-left: 160px;
+    word-break: normal;
+}
+
+/* Image */
+
+.my-image {
+    margin-right: 80px;
+    position: absolute;
+    right: 0;
+}
+.my-image img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* Skills Section */
+
+.skills-section {
+    margin-left: 5%;
+}
+
+.skills-heading h4 {
+    letter-spacing: 0.1rem;
+    color: white;
+    transform: translateX(-51px);
+    text-align: center;
+    background:  #b7210a; 
+    height: 30px;
+    width: 120px;
+    border-radius: 8%;
+}
+
+
+/* Start Line */
+
+.skills-bars {
+    margin-top: 90px;
+}
+
+.start-line {
+    transform: translateY(12px);
+    width: 46.8%;
+    height: 3px;
+    background: #DDDDDD;
+    position: absolute;
+    right: 0;
+}
+
+#line-2 {
+    transform: translateY(12px);
+    left: 0;
+    display: flex;
+    float: left;
+    width: 43.8%;
+    height: 3px;
+    background: #DDDDDD;
+    position: absolute;
+}
+/* HTML */
+
+.bar {
+    width: 90%;
+    height: 50px;
+    background: #DDDDDD;
+}
+
+.html-bar {
+    display: flex;
+    height: 50px;
+    width: 90%;
+    background: #56B051;
+}
+
+.html-bar h3 {
+    display: flex;
+    align-items: center;
+    margin-left: 90%;
+    color: white;
+}
+
+
+/* Bootstrap */
+
+.bootstrap {
+    margin-top: 37px;
+}
+
+.boot-bar {
+    display: flex;
+    height: 50px;
+    width: 90%;
+    background: #533B78;
+}
+
+.boot-bar h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 85%;
+    color: white;
+}
+
+
+/* CSS */
+
+.css {
+    margin-top: 37px;
+}
+
+.css-bar {
+    display: flex;
+    height: 50px;
+    width: 85%;
+    background: #2096F3;
+}
+
+
+.css-bar h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 85%;
+    color: white;
+}
+
+
+/* JavaScript */
+
+.javascript {
+    margin-top: 37px;
+}
+
+.js-bar {
+    display: flex;
+    height: 50px;
+    width: 80%;
+    background: #EFD821;
+}
+
+.js-bar h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 75%;
+    color: white;
+}
+
+
+/* Jquery */
+
+.jquery {
+    margin-top: 37px;
+}
+
+.jq-bar {
+    display: flex;
+    height: 50px;
+    width: 65%;
+    background: #0C63A6;
+}
+
+.jq-bar h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 65%;
+    color: white;
+}
+
+
+/* Services */
+
+.services-section {
+    margin-top: 90px;
+}
+
+.services-start-line h4 {
+    color: white;
+    height: 30px;
+    border-radius: 8%;
+    width: 130px;
+    letter-spacing: 0.1rem;
+    background: #b7210a;
+    text-align: center;
+}
+
+
+.services-start-line .left {
+    transform: translateY(-1.6rem);
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 44.9%;
+    background: #DDDDDD;
+}
+
+.services-start-line .right {
+    transform: translateY(-1.6rem);
+    position: absolute;
+    right: 0;
+    height: 3px;
+    width: 44.9%;
+    background: #DDDDDD;
+}
+
+
+/* Services Content Starting From Here */
+
+.services-content {
+    margin-top: 40px;
+    margin-left: 65px;
+}
+
+.first-card {
+    transition: ease-out 1s;
+    box-shadow: 0px 5px 40px 0px;
+    display: flex;
+    justify-content: center;
+    background: #e9f0e1;
+    width: 250px;
+    height: 330px;
+}
+
+.first-card:hover {
+    background:  #525252;
+    color: white;
+    box-shadow: -7px 10px 14px 0px rgba(0,0,0,0.44),
+    7px -10px 40px 0px rgba(0,0,0,0.44);
+    transition: 1s;
+    transform: translateY(1rem);
+}
+
+.first-card h4 {
+    transform: translateX(2.5rem);
+    margin-top: 150px;
+    font-weight: 900;
+}
+
+.tv {
+    font-size: 30px;
+    transform: translateX(-4rem);
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 85px;
+    height: 85px;
+    background:   #599a05;
+    border-radius: 50%;
+}
+
+.first-card p {
+    position: absolute;
+    width: 230px;
+    text-align: center;
+    transform: translateY(12rem);
+}
+
+.first-card .btn-read-more {
+    transform: translateY(17rem);
+    position: absolute;
+    text-align: center;
+    background:  #B72E1B;
+    width: 105px;
+    color: white;
+    padding: 5px;
+    transition: 1s;
+}
+
+.first-card .btn-read-more:hover {
+    color: white;
+    background:   #780009;
+}
+
+/*Experience Section*/
+
+.experience-section {
+
+
+    /* position: relative; */
+    height: 630px;
+}
+
+.experience-content {
+    transform: translateY(32rem);
+    display: flex;
+}
+
+.experience-start-line {
+    transform: translateY(27rem);
+}
+
+.experience .experience-start-line h4 {
+    color: white;
+    height: 30px;
+    border-radius: 8%;
+    width: 140px;
+    transform: translateX(14.3rem);
+    letter-spacing: 0.1rem;
+    background: #b7210a;
+    text-align: center;
+}
+
+
+
+.experience-start-line .left {
+    transform: translateY(-1.6rem);
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 44.5%;
+    background: #DDDDDD;
+}
+
+.experience-start-line .right {
+    transform: translateY(-1.6rem);
+    position: absolute;
+    right: 0;
+    height: 3px;
+    width: 44.5%;
+    background: #DDDDDD;
+}
+
+.experience-para {
+    min-width: 700px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+
+/* //////////////////////////////////////////////// Media Queries / Responsiveness /////////////////////////////////////////// */
+
+
+/* /////////////////  Mobile View ///////////////// */
+
+
+@media screen  and (max-width: 600px) {
+
+
+    /* ////////// Targetting Body ///////////// */
+
+    html {
+        /* width: 350px; */
+
+        overflow-x: hidden;
+       /* display: flex;
+       justify-content: center;
+       align-items: center; */
+
+      
+    }
+
+    body {
+        /* width: 350px; */
+       overflow-x: hidden;
+       /* display: flex;
+       justify-content: center;
+       align-items: center; */
+
+      
+    }
+
+    /* ///////////////// header Section //////////////// */
+
+    header {
+        display: none;
+        width: 80px;
+        overflow-x: hidden;
+        position: absolute;
+    }
+
+    /* ////////// Menu /////////// */
+ 
+    .menu {
+        top: -1.2rem;
+        display: block !important;
+        background-color: #b7210a;
+        height: 135px !important;
+        width: 80px !important;
+        position: relative;
+        /* left: 30px; */
+    }
+    .menu #logo {
+        display: none !important;
+    }
+
+    .menu-section #collapse {
+        position: relative;
+        left: -0.7rem;
+        transform: translateY(-0.4rem);
+    }
+    .menu a {
+        position: relative;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        line-height: 2rem;
+        display: block !important;
+    }
+    .menu .fiver-contact {
+        display: none;
+    }
+
+
+    /* //////////////////// Main Section Information About My Self //////////////////// */
+
+
+    main {
+        /* width: 100%; */
+        /* right: 0rem !important; */
+        position: relative !important;
+        display: flex !important;
+        justify-content: center !important;
+        /* top: 8rem; */
+    }
+
+
+    .info-section {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center;
+         width: 500px !important;
+        position: relative !important;
+        top: 20rem;
+    }
+
+    .infos {
+        display: flex !important;
+        position: absolute !important;
+        /* left: 0rem !important; */
+        /* width: 520px !important; */
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .infos h1 {
+        display: flex !important;
+        font-weight: 600;
+        word-break: normal;
+        /* transform: translateY("10rem"); */
+         /* position: relative !important; */
+        position: absolute !important;
+        text-align: center;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+        top: -40rem;
+        transform: translateX(-12.7rem);
+    }
+
+    .infos p {
+       word-break: normal !important;
+       width: 350px;
+       text-align: center !important;
+       display: flex !important;
+       position: absolute !important;
+       /* justify-self: center; */
+
+       margin-left: 0 !important;
+       margin-right: 0 !important;
+    }
+    .info-section .my-image {
+        /* display: none !important; */
+        transform: translateY(-20rem);
+        position: relative;
+        /* left: 6.1rem; */
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+        justify-self: center;
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+
+
+
+    /* //////////// Skills Section //////////////// */
+
+    .skills-section {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+
+        top: 55rem;
+    }
+
+    .skills-section h4 {
+        text-align: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 48%;
+        right: 40%;
+        /* left: 0.8rem; */
+        /* right: 0; */
+    }
+    .skills-section .start-line {
+        display: none !important;
+        position: absolute;
+        width: 600px;
+        right: 0rem !important;
+    }
+    .skills-section #line-2 {
+        display: none;
+        position: absolute;
+        width: 600px;
+        left: 0rem;
+    }
+
+
+    /* ////////// Bars //////////// */
+
+    .html {
+      width: 350px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .html h4 {
+        transform: translateX(-7rem);
+        color: white;
+    }
+    .html-bar h3 {
+        position: absolute;
+        display: flex;
+        top: 0.4rem;
+        right: 5rem;
+    }
+
+    .bootstrap {
+        width: 350px;
+        display: flex !important;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bootstrap h4 {
+        transform: translateX(-6.1rem) !important;
+        color: white;
+    }
+
+    .boot-bar h3 {
+        position: absolute !important;
+        display: flex !important;
+        top: 0.4rem !important;
+        right: 5rem !important;
+    }
+
+    .css {
+        width: 350px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .css h4 {
+        transform: translateX(-7.7rem);
+        color: white;
+    }
+
+    .css-bar h3 {
+        position: absolute !important;
+        display: flex !important;
+        top: 0.4rem !important;
+        right: 6rem !important;
+    }
+
+    .javascript {
+        width: 350px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .javascript  h4 {
+        transform: translateX(-5.9rem) !important;
+        color: white;
+    }
+
+    .js-bar h3 {
+        position: absolute !important;
+        display: flex !important;
+        top: 0.4rem;
+        right: 7.1rem;
+    }
+
+    .jquery {
+        width: 350px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jquery h4 {
+        transform: translateX(-6.9rem);
+        color: white;
+    }
+
+    .jq-bar h3 {
+        position: absolute;
+        display: flex !important;
+        top: 0.4rem;
+        right: 9rem;
+    }
+
+
+
+/* //////////// Services /////////// */
+
+
+
+    .services-section {
+       position: absolute;
+       top: 85rem;
+    }
+
+
+    /* ///////// Lines /////////// */
+
+    .right {
+        visibility: hidden;
+    }
+    .left {
+        visibility: hidden;
+    }
+
+    /* ///////////// Cards ////////////// */
+
+    .services-content {
+        display: block;
+        justify-content: center;
+    }
+
+    .first-card {
+        width: 300px;
+        height: 450px;
+        position: relative;
+        display: flex !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        right: 11%;
+        float: none !important;
+    }
+
+    .first-card:hover {
+        background:  #525252;
+        color: white;
+        box-shadow: -7px 10px 14px 0px rgba(0,0,0,0.44),
+        7px -10px 40px 0px rgba(0,0,0,0.44);
+        transition: 1s;
+        transform: translateY(1rem);
+    }
+/* 
+    #second-card {
+        position: relative;
+        display: flex;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        float: none !important;
+    } */
+
+     .experience-section {
+         position: absolute;
+         top: 147rem;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-left: 0 !important;
+         margin-right: 0 !important;
+        /* display; none;
+        position: absolute;
+        top: 160rem;
+        display: flex;
+        margin-left: 0 !important;
+        margin-right: 0!important;
+        left: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center; */
+        /* transform: translateX(-7rem); */
+        
+    } 
+
+  
+    .experience-para {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        /* right: 5rem; */
+        /* position: absolute;
+        display: flex;
+        margin-left: 0 !important;
+        margin-right: 0!important;
+        left: 0;
+        right: 0;
+         align-items: center;
+        justify-content: center; */
+        /* transform: translateX(-7rem); */
+        /* width: 100px; */
+        /* word-break: normal; */
+        /* text-align: left; */
+         /* float: none !important;
+        width: 350px; */
+    }
+
+    .experience-heading {
+         /* display: flex;
+        position: absolute; 
+        align-items: center;
+        justify-content: center;
+         margin-right: 0 !important;
+        margin-left: 0 !important; */
+        position: absolute;
+        bottom: 6.6rem;
+        right: 9.9rem;
+        
+    }
+
+    .experience-para p {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 300px;
+        position: absolute;
+        transform: translateX(-21.9rem);
+
+
+        /* position: absolute;
+        left: 1rem;
+        display: block;
+        word-break: normal;
+        width: 330px;
+        text-align: center; */
+        /* margin-right: 0 !important;
+        margin-left: 0 !important; */
+        /* height: 500px; */
+        /* margin-right: 0 !important;
+        margin-left: 0 !important; */
+    }
+}
+     
+    </style>
+    
+    
+    
+    
   </head>
   <body>
 
