@@ -1,3 +1,9 @@
+
+
+.fa, fas {
+    font-family: "Font Awesome 5 Pro !important";
+}
+
 * {
     margin: 0;
     padding: 0;
